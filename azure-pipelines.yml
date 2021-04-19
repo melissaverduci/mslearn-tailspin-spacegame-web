@@ -44,5 +44,5 @@ steps:
     arguments: --no-build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release
     zipAfterPublish: true
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
+  displayName: 'Publish Artifact in Azure Devops Artifact: drop'
   condition: succeeded()
